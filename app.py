@@ -35,12 +35,12 @@ def prediction(Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome
 # Creating a main function involves designing a user interface for feature input using Streamlit. 
 # Based on the input provided by the user, the model will make predictions.
 def main():
-    st.title('''Loan Status Prediction Model\n
-             The model shows an accuracy score of approximately 77.2% for loan approval\n status during testing.''')
-    st.text('''Analysis Sumary:
+    st.title("Loan Status Prediction Model")
+    st.text("The model shows an accuracy score of approximately 77.6% for loan approval status \nduring testing.")
+    st.text('''Analysis Sumary:\n
 As a summary, we can say that applicants applying for a house loan with the\nfollowing characteristics have a chance of acceptance or rejection as follows:
 
-* If they are married, have 2 or 0 dependents, have a high level of education or \ngraduates, fall into the medium or large CoapplicantIncome_category \n(greater than 1188), apply for a medium or small loan amount (less than or equal \nto 168,000), choose a medium or short loan term (less than or equal to 360 months), \nmeet the credit history guidelines (Credit_History == 1), and apply for a property \narea in a semi-urban area, applicants with these characteristics have a greater \nchance of loan approval or acceptance.
+* If they are married, have 2 or 0 dependents, have a high level of education or \ngraduates, fall into the medium or large CoapplicantIncome_category \n(greater than 1188), apply for a medium or small loan amount (less than or equal \nto 168,000), choose a medium or short loan term (less than or equal to 360 months), \nmeet the credit history guidelines (Credit_History == 1), and apply for a property \narea in a semi-urban area, applicants with these characteristics have a greater \nchance of loan approval or acceptance.\n
 * If they are not married, have 1 or 3 dependents, have a low level of education \nor are not graduates, fall into the small CoapplicantIncome_category \n(less than or equal to 1188), apply for a large loan amount (greater than 168,000), \nchoose a long loan term (greater than 360 months), do not meet the credit history \nguidelines (Credit_History == 0), and apply for a property area in a rural area, \napplicants with these characteristics have a greater chance of their loan not being \napproved or not accepted.''')
     Gender = st.selectbox('Applicant Gender',['Male','Female'])
     Married = st.selectbox('Married Status', ['Yes','No'])
